@@ -5,6 +5,7 @@ import java.util.Queue;
 
 public class StacksAndQueues {
 	public static void main(String[] args) {
+
 		Queue<Integer> queue = new LinkedList<>();
 
 		queue.add(56);
@@ -13,5 +14,11 @@ public class StacksAndQueues {
 
 		System.out.println("The Queue elements are : " + queue);
 		System.out.println("The Peek Of The Element :" + queue.peek());
+
+		int number = queue.remove();
+		System.out.println("After Removing the Element : " + number);
+		System.out.println("The Queue elements are : " + queue);
+
 	}
+
 }
